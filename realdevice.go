@@ -89,7 +89,7 @@ type RealDevice struct {
 func NewSerialDevice(addr *url.URL) (*RealDevice, error) {
 	config := &serial.Config{
 		Name:        addr.Path,
-		Baud:        38400,
+		Baud:        9600,
 		ReadTimeout: time.Second * 5,
 		Size:        8,
 		Parity:      serial.ParityNone,
